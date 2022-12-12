@@ -1,0 +1,654 @@
+
+/* exclude MacIE5 \*/
+
+/* end MacIE5 */
+
+/*------------------------------------------------------------------*/
+html{background:#e3e3e3 url("../cmn/bg.gif") repeat left bottom;}
+body{/*FF1px対策*/
+
+/*	position: relative;*/
+/* exclude MacIE5 \*/
+
+/*	width: 1000px;*/
+/* end MacIE5 */
+	margin: 0 auto;
+/*	min-height: 100%;*/
+}
+body{text-align:center;}
+
+
+*:first-child+html body {/*1px対策forIE7*/
+	padding-left: 1px;
+}
+*html body {/*1px対策forIE6以下*/
+	padding-left: 1px;
+}
+
+
+/*---初期設定---*/
+body{
+color:#333333;
+background:#e3e3e3 url("../cmn/bg.gif") repeat left bottom;
+
+}
+
+
+
+
+ul.noico li{list-style-image:none;margin-left:0px;}
+/*---レイアウト---*/
+
+#page{
+text-align:center;
+padding-top:12px;
+font-size:92%;
+}
+*html #page{padding-left: 1px;}
+
+#container{text-align:left;background:#eeeeee url("../cmn/menu_bg.gif") repeat-y left top;}
+
+#container,#footer .inr{width:860px;margin:0 auto;}
+
+#header{
+text-align:left;
+background:url("../cmn/header.gif") no-repeat left top;
+height:103px;
+overflow:hidden;
+}
+
+#wrapper{}
+
+
+
+#main{/*860-210=650*/
+	width:650px;
+	float:right;
+	overflow:hidden;
+	zoom: 1;
+
+}
+* html #rclumn{width:auto;}
+
+* html #main{
+/*margin:0 -10px;*/
+margin:0x;
+/*_width:617px;IE6*/
+}
+
+
+/*Hides from IE-mac\*/
+* html #main{float:right;}
+/*End hide from IE-mac*/ /*IE6以前向け*/
+
+#main .inr{
+margin:18px;
+overflow:hidden;
+}
+
+/*---共通へっだ---*/
+#header{overflow:hidden;}
+
+#header a{display:block;width:205px;height:82px;margin:10px 0 0 5px;}
+
+/*---共通フッタ---*/
+#footer{
+/*	background:#ece5d4;*//*カラムに色がついてたらbodyと同色を着色しないと刺さる*/
+	clear:both;
+	float:none;
+	width:100%;
+
+font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+/*font-size: 11px;
+padding-bottom: 125px;*/
+height:30px;
+}
+
+#footer .inr{background:#383c45;height:30px;}
+
+
+
+
+/*---共通left---*/
+
+#left{/*210*/
+	float:left;
+	width:210px;
+	height:100%;
+	overflow:hidden;
+/*	background:url("../cmn/menu_bg.gif");*/
+
+	color:#758094;
+
+	text-align:center;
+}
+
+#left ul,#left li{margin:0;padding:0;}
+#left ul img,#left ul a{display:inline-block;}
+
+#left p.copyr{
+	font-size:77%;
+	text-align:center;
+}
+
+#left .inr{
+margin:0 18px;
+overflow:hidden;
+}
+
+/*--バナー関係*/
+
+#left .inr div{
+margin-bottom:5px;
+text-align:left;
+}
+#left .inr div div{margin:0;padding:0;}
+
+#left .inr div.bnborder{
+border-bottom:1px solid #9a9a9a;
+padding-bottom:4px;
+margin-bottom:4px;
+}
+
+#left .inr div.jasrac{margin-top:20px;}
+
+#left .jasrac img{
+display:block;
+float:left;
+}
+#left .jasrac p{
+float:right;
+text-align:right;
+font-size:77%;
+}
+/*---ブロックレイアウト{---*/
+
+
+
+/*---}ブロックレイアウト---*/
+
+/*---独自拡張{---*/
+
+
+
+/*---}独自拡張---*/
+
+a.roundlink,a.roundlink:link,a.roundlink:visited,a.roundlink:active{
+	display:inline-block;
+	padding:1px 4px;
+	background:#579fc7 no-repeat right center;
+	color:#ffffff;
+	text-decoration:none;
+	font-size:80%;
+white-space:nowrap;
+
+}
+
+a.roundlink.icoLink{/*リンク*/
+	background:#579fc7 url("../cmn/ico-link.gif") no-repeat right !important;
+	padding-right:13px !important;
+}
+
+a.roundlink.icoBlank{/*外部リンク*/
+	background:#579fc7 url("../cmn/ico-linkBlank.gif") no-repeat right !important;
+	padding-right:17px !important;
+}
+
+a.roundlink.icoSound{/*試聴*/
+	background:#579fc7 url("../cmn/ico-linkSound.gif") no-repeat 2px !important;
+	padding-left:14px !important;
+}
+a.roundlink.icoMovie{/*動画試聴*/
+	background:#579fc7 url("../cmn/ico-linkMovie.gif") no-repeat 2px !important;
+	padding-left:18px !important;
+}
+a.roundlink.icoPv{/*視聴*/
+	background:#579fc7 url("../cmn/ico-linkPv.gif") no-repeat 2px !important;
+	padding-left:16px !important;
+}
+a.roundlink.icoShop{/*購入*/
+	background:#579fc7 url("../cmn/ico-linkShop.gif") no-repeat 1px !important;
+	padding-left:15px !important;
+	padding-right:2px !important;
+}
+
+
+
+a.roundlink:hover{
+	background-color:#3fbade !important;
+}
+
+.dot{
+background:url("../cmn/bg-dot.gif") repeat-x left bottom;
+}
+
+.totop{
+text-align:right;
+}
+.totop a,.totop a:link,.totop a:visited,.totop a:active{
+text-decoration:none;
+font-size:85%;
+}
+
+/*楽曲リスト*/
+dl.playlist{}
+dl.playlist dt{
+width:auto;
+font-weight:normal;
+}
+/*---汎用{---*/
+h1{
+	background:#213861 url("../cmn/bg-h1.jpg") no-repeat right top;
+	color:#ffffff;
+	font-size:120%;
+	height:24px;
+	line-height:24px;
+	padding:0 70px 0 5px;
+	overflow:hidden;
+}
+
+h2{
+	background:#2969c3 url("../cmn/bg-h2.jpg") no-repeat right top;
+	color:#ffffff;
+	font-size:105%;
+	height:17px;
+	line-height:17px;
+	padding:0 70px 0 5px;
+	overflow:hidden;
+}
+h3{
+	font-size: 120%;
+	color: #2a72af;
+}
+h4{
+	font-size:100%;
+	color: #425f77;
+}
+h5,h6{font-size:100%;}
+
+
+.star{
+color:#00cc13;
+font-size:110%;
+}
+/*---}汎用---*/
+
+/*---記事{---*/
+.category{
+background:url("../cmn/bg-dot.gif") repeat-x left bottom;
+margin:0 0 20px;
+padding:0 0 20px;
+}
+.article{
+background:url("../cmn/bg-dot.gif") repeat-x left bottom;
+margin:0 0 20px;
+padding:0 0 20px;
+}
+
+
+.articleBlk{
+border:1px solid #cccccc;
+margin-top:20px;
+padding:20px;
+}
+.articleBlk h2,#popup h2{
+background:none;
+color:#000000;
+padding:0;
+text-align:center;
+font-size:120%;
+}
+
+.article .image{
+float:left;
+
+}
+
+.article .detail{
+padding-left:10px;
+padding-bottom:20px;
+overflow:hidden;
+zoom:1;
+}
+/*---}記事---*/
+
+
+
+/*デモ音源*/
+
+#demo .linkbanner{
+text-align:center;
+margin-top:10px;
+}
+
+/*PP*/
+.ppfooter{
+border-top:1px solid #233853;
+margin-top:20px;
+padding-top:10px;
+}
+
+/*store*/
+
+#store .articleBlk{
+	background:#5ecfdb;
+	border:none;
+}
+
+#store ul.notice{
+	list-style-type:none;
+color:#555;
+font-size:85%;
+margin:20px 0 0;
+}
+
+#store .banner{text-align:center;margin:30px 0;}
+
+
+/*artistlist*/
+
+#artistlist .category{
+
+}
+#artistlist ul{/*w594*/
+
+margin:0 0 0 20px;
+list-style-type:none;
+padding:0;
+}
+#artistlist li{
+margin:0;
+padding:0;
+width:297px;
+float:left;
+}
+#artistlist li>a,#artistlist li span{
+display:inline-block;
+margin-right:1em;
+}
+/*livemedia*/
+#livemedia{}
+
+#livemedia .example{
+margin:0 0 15px;
+}
+
+ul.catlist{
+list-style-type:none;
+margin:0 0 20px;
+font-size:90%;
+}
+ul.catlist li{
+margin:0;
+display:inline-block;
+/display:inline;
+background:url("../cmn/link_ico.gif") no-repeat left center;
+padding:0 5px 0 15px;
+overflow:hidden;
+white-space:nowrap;
+/white-space:normal;
+}
+
+#livemedia h2{margin-bottom:2px;}
+
+#livemedia .artistlink{text-align:right;margin-bottom:10px;}
+
+#livemedia .articleArea{
+margin:0 20px;
+}
+#livemedia h3{margin:15px 0 0 -20px;}
+
+#livemedia .moreInfo{
+	border: 2px solid limeGreen;
+	margin-bottom: 10px;
+	text-align: left;
+	padding: 12px;
+}
+
+#livemedia .category{
+padding-bottom:0;
+}
+#livemedia .totop{
+margin-top:20px;
+}
+
+.mbusBn{margin:15px 0 10px;}
+
+/*artist*/
+#artist{}
+
+#artist h2{
+background-image:none;
+height:auto;
+line-height:normal;
+font-size:115%;
+padding:5px;
+}
+
+.movie{
+text-align:center;
+}
+
+#artist .disc .image img{
+width:120px;
+
+}
+#artist .disc .image p{
+text-align:center;
+margin:2px 0;
+}
+
+#artist .bio{
+margin-top:10px;
+}
+
+#artist .bio table{
+border:none !important;
+background:transparent !important;
+margin:10px 0 !important;
+}
+
+#artist .bio table td,#artist .bio table th{
+border:none !important;
+background:transparent !important;
+padding:1px 4px !important;
+vertical-align:top !important;
+}
+
+#artist .bio table th{
+font-weight:normal !important;
+text-align:right !important;
+white-space:nowrap !important;
+}
+
+
+table.prof{
+border:none;
+background:transparent;
+margin:10px 0;
+}
+table.prof td,table.prof th{
+border:none;
+background:transparent;
+padding:1px 4px;
+vertical-align:top;
+}
+table.prof th{
+font-weight:normal;
+text-align:right;
+white-space:nowrap;
+}
+
+
+#artist .etc{
+padding:10px;
+}
+
+.detail a img{
+margin:1px 0;
+}
+
+#artist .etc .detail {
+padding: 10px;
+overflow: hidden;
+zoom: 1;
+}
+
+/*siteTOP*/
+
+#topNews{
+	margin-top:15px;
+}
+#topNews ul{
+list-style-type:none;
+list-style-image:url("../images/disc.gif");
+}
+
+
+
+#topNews .lclumn{
+float:left;
+width:273px;
+overflow:hidden;
+}
+#topNews .rclumn{/*274+340=614*/
+width:341px;
+_width:338px;
+overflow:hidden;
+zoom:1;
+}
+
+#topNews .inr{margin:0;}
+#topNews .lclumn .inr{margin-right:20px;}
+
+
+#topNews dl{display:block;}
+#topNews dt{
+float:none;
+width:auto;
+line-height:1.4;
+padding:4px 0 2px;
+
+
+}
+#topNews dt{
+padding:0 0 0 15px;
+margin:0 0 0 10px;
+background:url("../images/disc.gif") no-repeat 2px 0.5em;
+
+}
+
+#topNews dd{
+width:auto;
+margin:0 0 0 15px;
+line-height:1.4;
+padding:2px 0 4px 10px;
+}
+
+
+
+#topNews ul.round,#topNews dl.round{
+background:#dadce0;
+margin:5px 0;
+padding:3px 7px;
+list-style-image:none;
+}
+#topNews ul.round li,
+#topNews dl.round dt{
+padding:0 0 0 10px;
+margin:0;
+background:url("../images/disc_dot.gif") no-repeat 2px 0.5em;
+}
+#topNews dl.round dd{margin:0;}
+#topNews dd.more{
+text-align:right;
+font-size:80%;
+}
+
+#topNews .rclumn{
+font-size:90%;
+}
+
+#topNews .article{
+margin:0 0 10px;
+padding:0 0 10px;
+}
+
+#topNews .article .image{
+width:80px;
+overflow:hidden;
+}
+#topNews .article .image img{
+margin-bottom:2px;
+}
+#topNews .article .detail{
+padding-left:5px;
+padding-bottom:0px;
+
+}
+
+#topNews .article p{
+line-height:1.5;
+margin:0 0 2px;
+}
+
+
+#topNews .article p.ttitle{
+font-weight:bold;
+font-size:110%;
+line-height:1.0;
+}
+#topNews .trelease{
+color: #2a72af;
+}
+#topNews .article p.tcopy{
+color: #df24c4;
+}
+
+#topNews .article p.tcopy span{
+color: #fb723d;
+}
+
+#topNews .article p.tarticle{
+margin:5px 0 0;
+font-size:90%;
+}
+
+div#myContent{margin-bottom:20px;}
+div#myContent img{border:1px solid #666666;}
+
+h1.top{
+background:none;
+	height:auto;
+	line-height:auto;
+	padding:0;
+	overflow:hidden;
+}
+/*popup*/
+
+#popup{
+display:none;
+background:#ffffff;
+width:720px;
+z-index:999;
+
+text-align:left;
+
+}
+
+#popup .inr{
+margin:10px 30px 30px;
+}
+p.closebtn{
+text-align:right;
+}
+
+
+/* slideshow css*/
+#slideshow { width:613px; height:315px; position:relative; }
+#slideshow div { position:absolute; top:0; left:0;
+	z-index:8; opacity:0.0; background-color: #fff; }
+#slideshow div.active { z-index:10; opacity:1.0; }
+#slideshow div.last-active { z-index:9; }
+#slideshow div a { display: block; }
+#slideshow div img { display: block; border: 0; }

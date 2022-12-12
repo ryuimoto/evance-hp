@@ -1,0 +1,608 @@
+@charset "shift_jis";
+
+/*
+Font-size Adjustment.
+	77% = 10px	|	122% = 16px	|	167% = 22px	
+	85% = 11px	|	129% = 17px	|	174% = 23px 
+	92% = 12px	|	136% = 18px	|	182% = 24px 
+	100% = 13px	|	144% = 19px	|	189% = 25px 
+	107% = 14px	|	152% = 20px	|	197% = 26px 
+	114% = 15px	|	159% = 21px	| 
+*/
+
+/*編集不要*/
+body {font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+/*======1-2.Universal selector=============================*/
+
+* {
+margin:0;
+padding:0;
+}
+
+/*======1-3.Structure Module===============================*/
+
+html {
+	overflow-y: auto;
+	margin:0;
+	padding:0;
+}
+
+body {
+	line-height: 1.5;
+	color: #333;
+	font-family: "メイリオ","Meiryo","ＭＳ Ｐゴシック","Osaka", sans-serif;
+	margin:0;
+	padding:0;
+}
+
+/*======1-4.Text Module===================================*/
+
+p{
+	margin:0 0 5px;
+	padding:0;
+
+}
+
+/*p,*/
+pre,
+address,
+cite {
+	margin: 0.5em 20px;
+	font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin:0 0 10px;
+	padding:0;
+	line-height:1.2;
+}
+
+h1 {font-size: 167%;}
+
+h2 {font-size: 152%;}
+
+h3 {font-size: 136%;}
+
+h4 {font-size: 122%;}
+
+h5 {font-size: 107%;}
+
+h6 {font-size: 107%;}
+
+pre {
+	padding: 0.5em 10px;
+	border: 1px dotted #aaa;
+	width: 90%;
+	overflow: scroll;
+	color: #333;
+	background-color: #f5f5f5;
+	font-family: "Osaka－等幅", monospace;
+}
+
+/*
+pre[title]::before {
+	margin-bottom: 0.8em;
+	padding: 0 10px;
+	display: block; 
+	content: attr(title);
+	color: #000;
+	background-color: #fff;
+}
+*/
+
+blockquote {
+	margin: 1.5em 20px;
+	padding: 10px; 
+	border: 3px solid #eee;
+	background-color: #fff;
+}
+
+blockquote * {
+	color: #666;
+
+}
+/*
+blockquote[title]:before {
+	margin: 2px 2px 1em 2px;
+	padding: 0.1em 16px;
+	display: block;
+	content: attr(title); 
+	background-color: #f5f5f5; 
+}
+
+blockquote[cite]:after {
+	padding: 0.8em 20px;
+	display: block; 
+	content: attr(cite);
+	color: #333;
+	text-align: right;
+}
+*/
+
+cite {
+	display: block;
+	color: #333;
+	text-align: right;
+}
+
+em {
+	font-weight: bold;
+}
+
+strong {
+/*	color: #ff4500;*/
+}
+.nobold strong{font-weight:normal;}
+
+code {
+	font-family: "Osaka－等幅", monospace;
+}
+
+abbr,
+acronym {
+/*	border-bottom: 1px dotted #aaa;
+	cursor: help;*/
+	border-width:0;
+}
+
+kbd {
+	border: 1px solid #ccc;
+	padding: 0 0.3em; 
+	background-color: #f5f5f5;
+	font-family: "Osaka－等幅", monospace;
+}
+
+hr {
+	display: block;
+	height:1px;
+	border: 1px -moz-bg-inset;
+	margin: 0.5em 0;
+	-moz-float-edge: margin-box;
+	-moz-box-sizing: border-box;
+
+	background-color:transparent;
+	border-width:0px;
+	border-top:1px solid #9a9a9a;
+
+}
+hr.nmg{margin: 0.5em 0;}
+
+/*======1-5.Hypertext Module==============================*/
+
+a:link,a:visited,a:active {
+	color: #405f9f;
+	text-decoration:underline;
+}
+
+
+a:hover {
+	color: #0090e3;
+	text-decoration:underline;
+}
+
+/*======1-6.List Module===================================*/
+
+ul,
+ol,
+dl {
+	margin: 0;
+	padding: 0;
+	list-style-position: outside;
+}
+
+li{
+	margin: 0 0 0 20px;
+	padding:0;
+}
+
+dl:after {
+	content: url("../cmn/spacer.gif");
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+dl{ display: inline-block;}
+
+dt,dd{
+	margin: 0;
+	padding:0;
+}
+dt {
+	float:left;
+	clear:both;
+	width:5em;
+	margin:0;
+	padding:0.5em;
+	_width:6em;    /* WinIE */
+
+/*	white-space:nowrap;*/
+
+	font-weight:bold;
+}
+
+dd {
+
+	margin:0;
+	margin-left:6em;    /* = dt.width + dt.padding */
+	padding:1ex;
+	margin-bottom:7px;
+}
+
+li li,
+li p,
+li pre,
+li dt,
+li dd,
+dd li,
+dd p,
+dd pre,
+dd dt,
+dd dd {
+/*	font-size: 100%;*/
+}
+
+li ul,
+li ol,
+li dl,
+li p,
+dd ul,
+dd ol,
+dd dl,
+dd p {
+	margin: 0.1em 10px;
+}
+
+ul.noico li{background:none;}
+ul.def{margin-left:10px;}
+ul.def li{background:none;list-style-type:disc;padding:0;margin-left:10px;}
+
+/*======1-7.Edit Module===================================*/
+
+del {
+	color: #999;
+	text-decoration: line-through;
+}
+/*
+del[datetime]::before {
+	content: " ( "attr(datetime)"\00524a\009664) ";
+}
+*/
+ins {
+	border-bottom: 1px dotted #ccc;
+	text-decoration: none;
+}
+/*
+ins[datetime]::before {
+	content: " ( "attr(datetime)"\004fee\006b63) ";
+}
+*/
+
+/*======1-8.Forms Module==================================*/
+
+form {
+	margin: 0;
+	padding: 0; 
+}
+form dl *{line-height:1.5;vertical-align:middle;}
+form dl,
+form p {
+	margin: 0 0 2px 0;
+}
+form dl input{margin:0 4px 2px 0;vertical-align:middle;}
+
+
+form dt {
+	width:11em;
+	padding:0em;
+}
+
+form dd {
+	padding:0;
+	margin-left:12em;
+}
+
+form.bdr{border:2px solid #856e53;margin:10px 20px;padding:20px;}
+form.bdr dt{width:12em;}
+form.bdr dd{margin-left:13em;}
+
+form .note{
+	color:#c00000;
+	font-size:90%;
+}
+
+
+/*--幅設定--*/
+
+
+
+fieldset {
+/*	border: 1px solid #ddd;*/
+	padding:10px;
+
+}
+
+legend {
+	margin: 0 1em;
+	padding: 0 10px;
+}
+select,
+input,
+textarea {
+	margin: 0 4px 4px 0;
+	padding: 0.1em 1px;
+/*	border: 1px solid #ddd;
+	font-family: Arial, Helvetica, "ヒラギノ角ゴ Pro W3",  sans-serif;
+	background-color: #f5f5f5;*/
+	font-size:100%;
+}
+
+input {
+	line-height: 1.2;
+}
+
+input:hover,
+textarea:hover {
+/*	border: 1px solid #aaa;*/
+}
+
+input:focus,
+textarea:focus {
+/*	border: 1px solid #000;*/
+}
+select{
+background:#ffffff;
+}
+
+textarea {
+/*
+width:360px;
+height:100px;
+*/
+}
+
+input.nbd{
+border-width:0;background:transparent;
+}
+/*input.submit,*/
+button.submit,
+
+a.submit,a.submit:link,a.submit:visited,a.submit:active
+/*.btn a,.btn a:link,.btn a:visited,.btn a:active*/
+
+{
+	display:inline-block;
+	background:#579fc7;
+	color:#ffffff;
+	border-width:0;
+	font-size:100%;
+	margin:2px 4px;
+	padding:6px 18px;
+	vertical-align:bottom;
+	line-height:1.2;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+input.submit,button.submit{
+	
+}
+input.submit:hover,.btn a:hover{
+
+/*background:#3fbade;*/
+}
+
+div.btn{text-align:center;margin:10px 0;}
+a.submit:hover,button.submit:hover{
+
+background:#3fbade;
+}
+
+.err{
+	color:#c00000;
+	font-weight:bold;
+	text-align:center;
+}
+span.req{color:red;font-weight:bold;}
+/*======1-9.Tables Module=================================*/
+
+table {
+	margin: 0 20px 0.5em 20px;
+	border-collapse: collapse;
+	border: 1px solid #203756;
+	background-color: #fff;
+}
+caption {
+
+}
+th,
+td {
+	padding: 0.1em 5px;
+	border: 1px solid #203756;
+}
+
+th {
+	color: #000;
+	background-color: #dadce0;
+	white-space:nowrap;
+}
+thead th{text-align:center;}
+
+td {
+/*	background-color: #fff;*/
+}
+
+
+/*======1-10.Image Module=================================*/
+
+img {
+	border-width:0;
+	background-color: transparent;
+	vertical-align:middle;
+}
+
+a img {
+
+}
+
+a:hover img {
+
+}
+
+/*======1-11.Object Module================================*/
+
+object,
+embed {
+margin:0;
+padding:0;
+/*	margin: 1em 20px;*/
+}
+
+/*======1-12.汎用スタイル=================================*/
+
+/*ハック*/
+.clearfix:after {
+	content: url("../cmn/spacer.gif");
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix { display: inline-block;}
+/* exclude MacIE5 \*/
+* html .clearfix { height: 1% }
+.clearfix {display:block;}
+/* end MacIE5 */
+
+
+.clr{ /*回り込みクリア*/
+	clear:both;
+	font-size: 0;
+	line-height: 0;
+	height: 0px;
+	visibility: hidden;
+}
+
+.fleft{ /*左に回りこみ*/
+	float:left;
+}
+.fright{ /*右に回りこみ*/
+	float:right;
+}
+.acenter{ /*中央そろえ*/
+	text-align:center;
+}
+.aright{ /*右そろえ*/
+	text-align:right;
+}
+
+.fs90{font-size:90%;}
+
+.mt20{ /*上に20pxあき*/
+margin-top:20px;
+}
+.mt15{ /*上に15pxあき*/
+margin-top:15px;
+}
+.mt10{ /*上に10pxあき*/
+margin-top:10px;
+}
+.pt10{ /*上に10pxあき*/
+padding-top:10px;
+}
+.mt5{ /*上に5pxあき*/
+margin-top:5px;
+}
+.ml5{ /*左に5pxあき*/
+margin-left:5px;
+}
+.ml10{ /*左に10pxあき*/
+margin-left:10px;
+}
+.ml15{ /*左に15pxあき*/
+margin-left:15px;
+}
+.pl15{ /*左に15pxあきpadding*/
+padding-left:15px;
+}
+.ml20{ /*左に20pxあき*/
+margin-left:20px;
+}
+.mr10{ /*右に10pxあき*/
+margin-right:10px;
+}
+.mr20{ /*右に20pxあき*/
+margin-right:20px;
+}
+.pr20{ /*右に20pxあきpadding*/
+padding-right:20px;
+}
+.mb5{ /*下に5pxあき*/
+margin-bottom:5px;
+}
+.mb20{ /*下に20pxあき*/
+margin-bottom:20px;
+}
+
+.bd{ /*周りにボーダ*/
+border:1px solid #47474a;
+}
+.bld{font-weight:bold;}
+.bred strong{color:#ff0000;}
+
+.cbld{
+	color:#b00000;
+	line-height:1.2;
+	font-weight:bold;
+}
+
+.print{ /*プリントのみ*/
+	display:none;
+}
+.ind10{text-indent:-1em;margin-left:1em;}
+.ind12{text-indent:-1.2em;margin-left:1.2em;}
+.ind15{text-indent:-1.5em;margin-left:1.5em;}
+
+.nbd{
+border-width:0;
+}
+
+/*---lightbox---*/
+#lightbox{
+	background-color:#ffffff;
+	padding: 10px;
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	z-index:999;
+	}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+/*#keyboardMsg{ float: right; }*/
+#keyboardMsg{ text-align:center;font-size:14px;}
+#keyboardMsg a:link,#keyboardMsg a:visited,#keyboardMsg a:active{color:#0b5151;}
+
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(overlay.png);z-index:998;}
+
+* html #overlay{
+	background-color: #333;
+	back\ground-color: transparent;
+	background-image: url(../cmn/spacer.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../inc/overlay.png", sizingMethod="scale");
+	z-index:998;
+	}
+	
+
