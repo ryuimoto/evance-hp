@@ -52,7 +52,8 @@ font-size:92%;
 
 #header{
 text-align:left;
-background:url("../cmn/header.gif") no-repeat left top;
+/* background:url("../cmn/header.gif") no-repeat left top; */
+background:url("../images/bitmap.png") no-repeat left top;
 height:103px;
 overflow:hidden;
 }
