@@ -378,7 +378,7 @@ a.submit,a.submit:link,a.submit:visited,a.submit:active
 
 {
 	display:inline-block;
-	background:#579fc7;
+	background:#ffc5e3;
 	color:#ffffff;
 	border-width:0;
 	font-size:100%;
@@ -401,7 +401,7 @@ input.submit:hover,.btn a:hover{
 div.btn{text-align:center;margin:10px 0;}
 a.submit:hover,button.submit:hover{
 
-background:#3fbade;
+background:#1f3861;
 }
 
 .err{
