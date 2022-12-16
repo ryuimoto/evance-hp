@@ -219,6 +219,28 @@ a.roundlink:hover{
 	background-color:#3fbade !important;
 }
 
+ul.title_over{
+    list-style: none;   
+    justify-content:space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.title_over li{
+    background: #000;
+}
+
+.title_over img{
+    height: auto;
+    display: block;
+    opacity: 1;
+    transition: .3s;
+}
+
+.title_over li:hover img{
+    opacity: 0.5;
+}
+
 .dot{
 background:url("../cmn/bg-dot.gif") repeat-x left bottom;
 }
